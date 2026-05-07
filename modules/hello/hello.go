@@ -5,6 +5,7 @@ import (
 	"log"
 	"vitozap/greetings"
 	"vitozap/slices"
+	"vitozap/structures"
 )
 
 func main() {
@@ -19,12 +20,11 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
 	sliceErr := slices.Slices()
-
 	if sliceErr != nil {
 		log.Fatal(sliceErr)
 	}
-	
 	fmt.Println(message)
+
+	structures.GetDefault()
 }
