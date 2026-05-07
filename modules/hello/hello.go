@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"vitozap/greetings"
+	"vitozap/slices"
 )
 
 func main() {
@@ -19,5 +20,11 @@ func main() {
 		log.Fatal(err)
 	}
 
+	sliceErr := slices.Slices()
+
+	if sliceErr != nil {
+		log.Fatal(sliceErr)
+	}
+	
 	fmt.Println(message)
 }
